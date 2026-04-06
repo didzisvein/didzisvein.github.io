@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monologs</title>
+    
+    <style>
+        /* Define basic page behavior */
+        html {
+            /* Pure white background like book paper */
+            background-color: #ffffff;
+            
+            /* High-quality system serifs. Falls back to default.
+               Looks elegant on macOS, Windows, iOS, and Android. */
+            font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
+            
+            /* Slightly softer than pure #000 for comfort */
+            color: #1a1a1a;
+            
+            /* Enable advanced typography features */
+            text-rendering: optimizeLegibility;
+            font-kerning: normal;
+        }
+
+        /* Center the page content */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Takes full viewport height */
+            margin: 0;
+            padding: 2rem; /* Buffer for small screens */
+            box-sizing: border-box;
+        }
+
+        /* The central container for the text block */
+        .monologue-container {
+            max-width: 600px; /* The 'ideal' width for readable line lengths */
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Stylizing the monologue itself */
+        p.monologue {
+            /* Increase font size slightly to feel like a premium text block */
+            font-size: 1.15rem; /* ~18.4px */
+            
+            /* This is the key 'book look' metric. 
+               1.75 is generous and luxurious for serifs. */
+            line-height: 1.75; 
+            
+            margin: 0;
+            
+            /* Subtle indentation of the first line, 
+               a hallmark of classic book typography. */
+            text-indent: 2rem;
+            
+            /* Optional: Subtle letter-spacing for old-style serifs */
+            letter-spacing: -0.01em;
+        }
+
+        /* Responsive adjustments for mobile devices */
+        @media (max-width: 600px) {
+            body {
+                padding: 1.5rem;
+            }
+            p.monologue {
+                font-size: 1.05rem; /* Scale down slightly on phones */
+                line-height: 1.6;
+                text-indent: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="monologue-container">
+        
+        <p class="monologue">
+            Kā mēs atceramies? Ko mēs atceramies? Kādēļ? Atmiņas nekad nav nemainīgas – tās vienmēr tiek pārrakstītas, atjaunotas, izveidotas no jauna. Atmiņas neatsauc pagātni – tās pamato tagadni. Izskaidro to, kā mēs kļuvām par to, kas mēs esam. Veido pārmantojamību, saknes, mūsu pašu radīšanas stāstu. Mēs visi esam savu atmiņu pārvaldītāji, pārveidotāji un neizbēgami arī sagrozītāji. Tagadnes palu straume savā ceļā noslauka jebkādus pagātnes sanesumus. Bet kas notiek, kad neapturamā tagadne saskrienas ar neizkustināmu pagātni? Ar priekšmetiem, attēliem, liecībām, kas nemainīgi atgādina – tas bija šādi? Vai tam ir kāda viena atbilde? Vai tāda ir nepieciešama? Mēs uz šo jautājumu atbildam katru dienu, un atbilde katru dienu ir sava. Vakardienas atbilde ir tikai kārtējās pagātnes atliekas, kam nav cerību saglabāties šodienas postošajā radīšanā. Šo pierādījumu mērķis jau arī nav pilnībā atjaunot pagātni tādu, kāda tā bija, tie to nemaz nespēj. Tie ir tik vien kā vārdi mūsu šodienas stāstā. Tomēr tas nenozīmē, ka šos vārdus mums nevajag teikt, krāt un pierakstīt. Gluži otrādi, bez šiem ceļmalās salasītajiem akmeņiem nav cerību uzbūvēt šodienas celtni. Tādēļ teiksim, krāsim un pierakstīsim, lai būtu, ko pārrakstīt, atveidot un izveidot no jauna.
+        </p>
+
+    </main>
+
+</body>
+</html>
